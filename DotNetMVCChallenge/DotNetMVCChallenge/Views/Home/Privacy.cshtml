@@ -1,0 +1,82 @@
+﻿@model IEnumerable<MyLibrary.AsteroidInformation.Asteroid>
+@{
+    ViewData["Title"] = "Asteroids Information";
+}
+<!-- style>
+    h1 {
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 2px solid #757575;
+        padding: 8px;
+    }
+
+    input[type=text] {
+        border: 3px solid #E0E0E0;
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+
+    input[type=submit] {
+        color: white;
+        border-style: none;
+        background-color: dimgray;
+        padding: 8px 30px;
+        border-radius: 3px;
+        transition-duration: 0.4s;
+    }
+
+        input[type=submit]:hover {
+            background-color: #43A047;
+            color: white;
+        }
+
+    input[type=text]:focus {
+        border: 3px solid dimgray;
+    }
+</!--style>
+
+<h1>ViewData["Title"]</h1>
+
+<form method="get">
+    Start date:<br>
+    <input type="text" name="start_date">
+    <br>
+    End date:<br>
+    <input type="text" name="end_date">
+    <br><br>
+    <input type="submit" value="Go">
+</form>
+
+<br><br>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Estimated diameter(m)</th>
+        <th>Close approach date</th>
+        <th>Relative velocity(Km/h)</th>
+        <th>Distance to earth(Km)</th>
+        <th>Dangerous?</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>item.id</td>
+            <td>item.name</td>
+            <td>item.estimated_diameter.meters.estimated_diameter_max</td>
+            <td>item.close_approach_data.close_approach_date</td>
+            <td>item.close_approach_data.relative_velocity.kilometers_per_hour</td>
+            <td>item.close_approach_data.miss_distance.kilometers</td>
+            <td>item.is_potentially_hazardous_asteroid</td>
+        </tr>
+    }
+</table -->

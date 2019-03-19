@@ -1,0 +1,9 @@
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\bin\Debug\netcoreapp2.2\MyLibrary.deps.json
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\bin\Debug\netcoreapp2.2\MyLibrary.dll
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\bin\Debug\netcoreapp2.2\MyLibrary.pdb
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\obj\Debug\netcoreapp2.2\MyLibrary.csprojAssemblyReference.cache
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\obj\Debug\netcoreapp2.2\MyLibrary.csproj.CoreCompileInputs.cache
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\obj\Debug\netcoreapp2.2\MyLibrary.AssemblyInfoInputs.cache
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\obj\Debug\netcoreapp2.2\MyLibrary.AssemblyInfo.cs
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\obj\Debug\netcoreapp2.2\MyLibrary.dll
+C:\Users\jdominguez\OneDrive - ENDAVA\Documents\challenges\DotNetMVCChallenge\MyLibrary\obj\Debug\netcoreapp2.2\MyLibrary.pdb
