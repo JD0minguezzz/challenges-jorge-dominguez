@@ -1,0 +1,83 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.widget-3 {
+	min-height: 300px;
+	width: 260px;
+    background-color: #444f51;
+    border-radius: 5px;
+}
+
+.widget-title {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	vertical-align: top;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: #dd7500; 
+}
+
+.widget-title h2 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.btn-list {
+	display: flex;
+	flex-flow: column wrap;	
+	justify-content: center;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.btn-list .btnbox {
+	height: 5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 15px;
+	border-bottom: 1px #363e40 solid;
+}
+
+.widget-3 .btn-list .btnbox:nth-child(5) {
+	border-bottom: none;
+}
+
+.btn-list .btnbox i {
+	margin-right: 15px;
+}
+
+.btn-list .btnbox a {
+	align-self: center;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.btn-list .btnbox h4 {
+	font-size: 14px;
+	font-weight: lighter; 
+	margin: 0px;
+	padding: 4px;
+	width: 30px;
+	background: #bdbec0;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.btnbox:hover {
+	color: #363e40;
+	background-color: #bdbec0;
+	cursor: pointer;
+}
+
+.btnbox:hover > a {
+	color: #363e40;
+}
+
+.btnbox:hover > h4 {
+	color: #ffffff;
+	background-color: #a03033;
+}

@@ -1,0 +1,84 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.form-container {
+	margin: auto;
+	width: 30%;
+}
+
+.title {
+	margin: auto;
+	width: 25%;
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type=number] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	transition: 0.5s;
+	border-radius: 5px;
+	outline: none;
+}
+
+input[type=number]:focus {
+	border: 3px solid #43a047;
+}
+
+input[type=submit] {
+	width: 100%;
+	padding: 15px;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #43a047;
+	border-radius: 5px;
+	border: 2px transparent solid;
+}
+
+input[type=submit]:hover {
+	background-color: #ffffff;
+	border: 2px #000000 solid;
+	color: #000000;
+	cursor: pointer;
+}
+
+.list {
+	margin: auto;
+	width: 60%;
+}
+
+.list .player-data {
+	padding: 0;
+	list-style-type: none;
+}
+
+.list .player-data li {
+	width: auto;
+	padding: 5px;
+	background-color: #e0e0e0;
+	margin: 5px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.list .player-data li:hover {
+	background-color: #eeeeee;
+}
+
+.images {
+	text-align: center;
+	margin-top: 20px;
+	border: 2px #424242 solid;
+}
+
+.images img {
+	width: 5%;
+	margin: 2px;
+}

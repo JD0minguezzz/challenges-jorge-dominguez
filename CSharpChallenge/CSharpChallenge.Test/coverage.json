@@ -1,0 +1,208 @@
+{
+  "CSharpChallenge.dll": {
+    "C:\\Temp\\dotnet\\challenge\\CSharpChallenge\\MathHelper.cs": {
+      "CSharpChallenge.Circle": {
+        "System.Double CSharpChallenge.Circle::get_Radio()": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        }
+      },
+      "CSharpChallenge.MathHelper": {
+        "System.Void CSharpChallenge.MathHelper::Calculate(CSharpChallenge.Shape,System.Double&,System.Double&)": {
+          "Lines": {
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 20,
+              "Offset": 34,
+              "EndOffset": 90,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Temp\\dotnet\\challenge\\CSharpChallenge\\Person.cs": {
+      "CSharpChallenge.Person": {
+        "System.String CSharpChallenge.Person::get_FirstName()": {
+          "Lines": {
+            "14": 3
+          },
+          "Branches": []
+        },
+        "System.String CSharpChallenge.Person::get_LastName()": {
+          "Lines": {
+            "20": 2
+          },
+          "Branches": []
+        },
+        "System.String CSharpChallenge.Person::get_Company()": {
+          "Lines": {
+            "22": 2
+          },
+          "Branches": []
+        },
+        "System.String CSharpChallenge.Person::GetFullName()": {
+          "Lines": {
+            "41": 1,
+            "42": 1,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "49": 0,
+            "52": 1,
+            "53": 1,
+            "54": 1,
+            "57": 0,
+            "58": 1
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 26,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 26,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 12,
+              "EndOffset": 58,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 52,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 52,
+              "Offset": 69,
+              "EndOffset": 97,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void CSharpChallenge.Person::.ctor(System.String)": {
+          "Lines": {
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 1
+          },
+          "Branches": []
+        },
+        "System.Void CSharpChallenge.Person::.ctor()": {
+          "Lines": {
+            "36": 1,
+            "37": 1,
+            "39": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Temp\\dotnet\\challenge\\CSharpChallenge\\StringHelper.cs": {
+      "CSharpChallenge.StringHelper": {
+        "System.Boolean CSharpChallenge.StringHelper::TryParsePercentage(System.String,System.Double&)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "18": 1,
+            "19": 0,
+            "20": 0,
+            "23": 1,
+            "24": 1,
+            "26": 1,
+            "27": 0,
+            "28": 0,
+            "31": 1,
+            "32": 1,
+            "33": 1
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 18,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 66,
+              "EndOffset": 68,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 66,
+              "EndOffset": 73,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

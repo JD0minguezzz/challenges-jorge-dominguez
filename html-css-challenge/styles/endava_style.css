@@ -1,0 +1,136 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.widget-4 {
+	min-height: 350px;
+	width: 260px;
+	background-color: #444f51;
+	border-radius: 5px;
+}
+
+.widget-4 .plus-btn {
+	height: 51px;
+	width: 100%;
+}
+
+.widget-4 .plus-btn button {
+	font-family: Arial;
+	font-weight: lighter;
+	color: #bdbec0;
+	background-color: #444f51;
+	font-size: 18px;
+	float: right;
+	border-radius: 50%;
+	margin: 10px 15px;
+	border: 2px #bdbec0 solid;
+}
+
+.widget-4 .plus-btn button:hover {
+	cursor: pointer;
+	color: #ffffff;
+	border: 2px #ffffff solid;
+}
+
+.widget-4 .plus-btn i {
+	object-fit: cover;
+	width: 5px;
+  	height: 5px;
+}
+
+.widget-4 .endava-logo {
+	display: flex;
+	justify-content: center;
+	height: 140px;
+	width: 140px;
+	margin: 0 auto;
+}
+
+.widget-4 .endava-logo img {
+	height: 130px;
+	width: 130px;
+	border: 5px #dd7500 solid;
+	border-radius: 50%;
+}
+
+.widget-4 .text-sect {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.widget-4 .text-sect h2 {
+	font-weight: lighter;
+	color: #ffffff;
+}
+
+.widget-4 .text-sect p {
+	color: #bdbec0;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.widget-4 .bottom-btns {
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	position: relative;
+	background-color: #363e40;
+	height: 50px;
+}
+
+.widget-4 .bottom-btns i {
+	margin-right: 10px;
+}
+
+.widget-4 .bottom-btns a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.widget-4 .bottom-btns .btn-1 {
+	width: 33.33%;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	border-top: 3px #a03033 solid;
+}
+
+.widget-4 .bottom-btns .btn-2 {
+	width: 33.33%;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	border-top: 3px #0092dd solid;
+}
+
+.widget-4 .bottom-btns .btn-3 {
+	width: 33.33%;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	border-top: 3px #dd7500 solid;
+}
+
+.widget-4 .bottom-btns .btn-1:hover {
+	background-color: #bdbec0;
+	cursor: pointer;
+}
+
+.widget-4 .bottom-btns .btn-2:hover {
+	background-color: #bdbec0;
+	cursor: pointer;
+}
+
+.widget-4 .bottom-btns .btn-3:hover {
+	background-color: #bdbec0;
+	cursor: pointer;
+}
+
+.btn-1:hover > a {
+	color: #444f51;
+}
+
+.btn-2:hover > a {
+	color: #444f51;
+}
+
+.btn-3:hover > a {
+	color: #444f51;
+}

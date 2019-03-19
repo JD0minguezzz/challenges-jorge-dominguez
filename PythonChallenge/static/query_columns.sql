@@ -1,0 +1,1 @@
+SELECT c.COLUMN_NAME FROM information_schema.columns c WHERE table_schema = database() ORDER BY c.ORDINAL_POSITION

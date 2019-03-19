@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Player Information</title>
+	<link rel="stylesheet" href="/static/css/player_data.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="title"><h1>Player Information</h1></div>
+	<div class="form-container">
+		<form action="/player_information" method="post">
+			<label for="player_id">Player ID:</label>
+			<input type="number" name="player_id" autocomplete="off">
+			<input type="submit" value="Go">
+		</form>
+	</div>
+	<div class="list">
+		{% if player_data %}
+			<div class="images">
+			<img src={{ player_data['photo'] }}>
+			<img src={{ player_data['flag'] }}>
+			<img src={{ player_data['club_logo'] }}>
+		</div>
+			<ul class="player-data">
+				<li><b>Name:</b> {{ player_data['name'] }}</li>
+				<li><b>Age:</b> {{ player_data['age'] }}</li>
+				<li><b>Nationality:</b> {{ player_data['nationality'] }}</li>
+				<li><b>Overall:</b> {{ player_data['overall'] }}</li>
+				<li><b>Potential:</b> {{ player_data['potential'] }}</li>
+				<li><b>Club:</b> {{ player_data['club'] }}</li>
+				<li><b>Value:</b> {{ player_data['value'] }}</li>
+				<li><b>Wage:</b> {{ player_data['wage'] }}</li>
+				<li><b>Special:</b> {{ player_data['special'] }}</li>
+				<li><b>Preferred foot:</b> {{ player_data['preferred_foot'] }}</li>
+				<li><b>International</b> reputation: {{ player_data['international_reputation'] }}</li>
+				<li><b>Weak foot:</b> {{ player_data['weak_foot'] }}</li>
+				<li><b>Skill moves:</b> {{ player_data['skill_moves'] }}</li>
+				<li><b>Work rate:</b> {{ player_data['work_rate'] }}</li>
+				<li><b>Body type:</b> {{ player_data['body_type'] }}</li>
+				<li><b>Real face:</b> {{ player_data['real_face'] }}</li>
+				<li><b>Position:</b> {{ player_data['position'] }}</li>
+				<li><b>Jersey number:</b> {{ player_data['jersey_number'] }}</li>
+				<li><b>Joined:</b> {% if player_data['joined'] %} {{ player_data['joined'] }} {% else %} Data unavailable. {% endif %}</li>
+				<li><b>Loaned from:</b> {% if player_data['loaned_from'] %} {{ player_data['loaned_from'] }} {% else %} Data unavailable. {% endif %}</li>
+				<li><b>Contract valid until:</b> {% if player_data['contract_valid_until'] %} {{ player_data['contract_valid_until'] }} {% else %} Data unavailable. {% endif %}</li>
+				<li><b>Height:</b> {{ player_data['height'] }}</li>
+				<li><b>Weight:</b> {{ player_data['weight'] }}</li>
+				<li><b>Crossing:</b> {{ player_data['crossing'] }}</li>
+				<li><b>Finishing:</b> {{ player_data['finishing'] }}</li>
+				<li><b>Heading accuracy:</b> {{ player_data['heading_accuracy'] }}</li>
+				<li><b>Short passing:</b> {{ player_data['short_passing'] }}</li>
+				<li><b>Volleys:</b> {{ player_data['volleys'] }}</li>
+				<li><b>Dribbling:</b> {{ player_data['dribbling'] }}</li>
+				<li><b>Curve:</b> {{ player_data['curve'] }}</li>
+				<li><b>FK accuracy:</b> {{ player_data['fk_accuracy'] }}</li>
+				<li><b>Long passing:</b> {{ player_data['log_passing'] }}</li>
+				<li><b>Ball control:</b> {{ player_data['ball_control'] }}</li>
+				<li><b>Acceleration:</b> {{ player_data['acceleration'] }}</li>
+				<li><b>Sprint speed:</b> {{ player_data['sprint_speed'] }}</li>
+				<li><b>Agility:</b> {{ player_data['agility'] }}</li>
+				<li><b>Reactions:</b> {{ player_data['reactions'] }}</li>
+				<li><b>Balance:</b> {{ player_data['balance'] }}</li>
+			</ul>
+		{% elif player_data == None %}
+		{% endif %}
+	</div>
+</body>
+</html>

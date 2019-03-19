@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compare Players</title>
+	<meta charset="UTF-8">
+	<link href="/static/css/players_compare_style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	<h1>Compare Players Information</h1>
+	<div class="form-container">
+		<form action="/players_compare" method="post">
+			<label for="player_id">Player 1 ID:</label>
+			<input type="number" name="player1_id" autocomplete="off">
+			<label for="player_id">Player 2 ID:</label>
+			<input type="number" name="player2_id" autocomplete="off">
+			<input type="submit" value="Go">
+		</form>
+	</div>
+	{% if players_data %}
+	<div class="lists">
+		<div class="player1-data">
+			<div class="images">
+				<img src={{ players_data[0].get('photo') }}>
+				<img src={{ players_data[0].get('flag') }}>
+				<img src={{ players_data[0].get('club_logo') }}>
+			</div>
+			<ul>
+				<li><b>Name:</b> {{ players_data[0].get('name') }}</li>
+				<li><b>Age:</b> {{ players_data[0].get('age') }}</li>
+				<li><b>Nationality:</b> {{ players_data[0].get('nationality') }}</li>
+				<li><b>Overall:</b> {{ players_data[0].get('overall') }}</li>
+				<li><b>Potential:</b> {{ players_data[0].get('potential') }}</li>
+				<li><b>Club:</b> {{ players_data[0].get('club') }}</li>
+				<li><b>Value:</b> {{ players_data[0].get('value') }}</li>
+				<li><b>Wage:</b> {{ players_data[0].get('wage') }}</li>
+				<li><b>Special:</b> {{ players_data[0].get('special') }}</li>
+				<li><b>Preferred foot:</b> {{ players_data[0].get('preferred_foot') }}</li>
+				<li><b>International reputation:</b> {{ players_data[0].get('international_reputation') }}</li>
+				<li><b>Weak foot:</b> {{ players_data[0].get('weak_foot') }}</li>
+				<li><b>Skill moves:</b> {{ players_data[0].get('skill_moves') }}</li>
+				<li><b>Work rate:</b> {{ players_data[0].get('work_rate') }}</li>
+				<li><b>Body type:</b> {{ players_data[0].get('body_type') }}</li>
+				<li><b>Real face:</b> {{ players_data[0].get('real_face') }}</li>
+				<li><b>Position:</b> {{ players_data[0].get('position') }}</li>
+				<li><b>Jersey number:</b> {{ players_data[0].get('jersey_number') }}</li>
+				<li><b>Joined:</b> {% if players_data[0].get('joined') %} {{ players_data[0].get('joined') }} {% else %} Data unavailable {% endif %}</li>
+				<li><b>Loaned from:</b> {% if players_data[0].get('loaned_from') %} {{ players_data[0].get('loaned_from') }} {% else %} Data unavailable {% endif %}</li>
+				<li><b>Contract valid until:</b> {% if players_data[0].get('contract_valid_until') %} {{ players_data[0].get('contract_valid_until') }} {% else %} Data unavailable {% endif %}</li>
+				<li><b>Height:</b> {{ players_data[0].get('height') }}</li>
+				<li><b>Weight:</b> {{ players_data[0].get('weight') }}</li>
+				<li><b>Crossing:</b> {{ players_data[0].get('crossing') }}</li>
+				<li><b>Finishing:</b> {{ players_data[0].get('finishing') }}</li>
+				<li><b>Heading accuracy:</b> {{ players_data[0].get('heading_accuracy') }}</li>
+				<li><b>Short passing:</b> {{ players_data[0].get('short_passing') }}</li>
+				<li><b>Volleys:</b> {{ players_data[0].get('volleys') }}</li>
+				<li><b>Dribbling:</b> {{ players_data[0].get('dribbling') }}</li>
+				<li><b>Curve:</b> {{ players_data[0].get('curve') }}</li>
+				<li><b>FK accuracy:</b> {{ players_data[0].get('fk_accuracy') }}</li>
+				<li><b>Long passing:</b> {{ players_data[0].get('log_passing') }}</li>
+				<li><b>Ball control:</b> {{ players_data[0].get('ball_control') }}</li>
+				<li><b>Acceleration:</b> {{ players_data[0].get('acceleration') }}</li>
+				<li><b>Sprint speed:</b> {{ players_data[0].get('sprint_speed') }}</li>
+				<li><b>Agility:</b> {{ players_data[0].get('agility') }}</li>
+				<li><b>Reactions:</b> {{ players_data[0].get('reactions') }}</li>
+				<li><b>Balance:</b> {{ players_data[0].get('balance') }}</li>
+			</ul>
+		</div>
+		<div class="player2-data">
+			<div class="images">
+				<img src={{ players_data[1].get('photo') }}>
+				<img src={{ players_data[1].get('flag') }}>
+				<img src={{ players_data[1].get('club_logo') }}>
+			</div>
+			<ul>
+				<li><b>Name:</b> {{ players_data[1].get('name') }}</li>
+				<li><b>Age:</b> {{ players_data[1].get('age') }}</li>
+				<li><b>Nationality:</b> {{ players_data[1].get('nationality') }}</li>
+				<li><b>Overall:</b> {{ players_data[1].get('overall') }}</li>
+				<li><b>Potential:</b> {{ players_data[1].get('potential') }}</li>
+				<li><b>Club:</b> {{ players_data[1].get('club') }}</li>
+				<li><b>Value:</b> {{ players_data[1].get('value') }}</li>
+				<li><b>Wage:</b> {{ players_data[1].get('wage') }}</li>
+				<li><b>Special:</b> {{ players_data[1].get('special') }}</li>
+				<li><b>Preferred foot:</b> {{ players_data[1].get('preferred_foot') }}</li>
+				<li><b>International reputation:</b> {{ players_data[1].get('international_reputation') }}</li>
+				<li><b>Weak foot:</b> {{ players_data[1].get('weak_foot') }}</li>
+				<li><b>Skill moves:</b> {{ players_data[1].get('skill_moves') }}</li>
+				<li><b>Work rate:</b> {{ players_data[1].get('work_rate') }}</li>
+				<li><b>Body type:</b> {{ players_data[1].get('body_type') }}</li>
+				<li><b>Real face:</b> {{ players_data[1].get('real_face') }}</li>
+				<li><b>Position:</b> {{ players_data[1].get('position') }}</li>
+				<li><b>Jersey number:</b> {{ players_data[1].get('jersey_number') }}</li>
+				<li><b>Joined:</b> {% if players_data[1].get('joined') %} {{ players_data[1].get('joined') }} {% else %} Data unavailable {% endif %}</li>
+				<li><b>Loaned from:</b> {% if players_data[1].get('loaned_from') %} {{ players_data[1].get('loaned_from') }} {% else %} Data unavailable {% endif %}</li>
+				<li><b>Contract valid until:</b> {% if players_data[1].get('contract_valid_until') %} {{ players_data[1].get('contract_valid_until') }} {% else %} Data unavailable {% endif %}</li>
+				<li><b>Height:</b> {{ players_data[1].get('height') }}</li>
+				<li><b>Weight:</b> {{ players_data[1].get('weight') }}</li>
+				<li><b>Crossing:</b> {{ players_data[1].get('crossing') }}</li>
+				<li><b>Finishing:</b> {{ players_data[1].get('finishing') }}</li>
+				<li><b>Heading accuracy:</b> {{ players_data[1].get('heading_accuracy') }}</li>
+				<li><b>Short passing:</b> {{ players_data[1].get('short_passing') }}</li>
+				<li><b>Volleys:</b> {{ players_data[1].get('volleys') }}</li>
+				<li><b>Dribbling:</b> {{ players_data[1].get('dribbling') }}</li>
+				<li><b>Curve:</b> {{ players_data[1].get('curve') }}</li>
+				<li><b>FK accuracy:</b> {{ players_data[1].get('fk_accuracy') }}</li>
+				<li><b>Long passing:</b> {{ players_data[1].get('log_passing') }}</li>
+				<li><b>Ball control:</b> {{ players_data[1].get('ball_control') }}</li>
+				<li><b>Acceleration:</b> {{ players_data[1].get('acceleration') }}</li>
+				<li><b>Sprint speed:</b> {{ players_data[1].get('sprint_speed') }}</li>
+				<li><b>Agility:</b> {{ players_data[1].get('agility') }}</li>
+				<li><b>Reactions:</b> {{ players_data[1].get('reactions') }}</li>
+				<li><b>Balance:</b> {{ players_data[1].get('balance') }}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="plots">
+		<div class="pie">
+			<img src="/static/plots/{{ players_data[0].get('id') }}{{ players_data[1].get('id') }}.png">
+		</div>
+		<div class="bars">
+			<img src="/static/plots/comparison_{{ players_data[0].get('id') }}{{ players_data[1].get('id') }}.png">
+		</div>
+	</div>
+	{% elif players_data == None %}
+	{% endif %}
+</body>
+</html>

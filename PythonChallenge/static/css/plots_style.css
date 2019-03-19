@@ -1,0 +1,45 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+.histogram {
+	margin: auto;
+	width: 45%;
+	border: 2px #424242 solid;
+}
+
+.histogram img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	display: block;
+}
+
+.images {
+	display: flex;
+	width: 100%;
+}
+
+.images .plot-nationality {
+	display: inline-block;
+	border: 2px #424242 solid;
+	width: 50%;
+	margin: 10px;
+}
+
+.images .plot-club {
+	display: inline-block;
+	border: 2px #424242 solid;
+	width: 50%;
+	margin: 10px;
+}
+
+h4 {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0;
+}

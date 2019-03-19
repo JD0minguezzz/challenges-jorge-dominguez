@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Central Tendency Variables</title>
+    <link rel="stylesheet" href="/static/css/stats_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Central Tendency Variables</h1>
+    </div>
+    <div class="table">
+        <table class="variables-table">
+            <tr>
+				<th>Column name</th>
+                <th>Mean</th>
+                <th>Median</th>
+                <th>Mode</th>
+                <th>Standard Deviation</th>
+                <th>Variance</th>
+            </tr>
+            {% for i in stats %}
+            <tr>
+                <td>{{ i[0] }}</td>
+                <td>{{ i[1] }}</td>
+                <td>{{ i[2] }}</td>
+                <td>{{ i[3] }}</td>
+                <td>{{ i[4] }}</td>
+				<td>{{ i[5] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+ </body>
+</html>

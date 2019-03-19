@@ -1,0 +1,150 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.widget-2 {
+	min-height: 300px;
+	width: 250px; 
+    background-color: #444f51;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.widget-2 h2 {
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 13% 5%;
+}
+
+.e-mail {
+  position: relative;
+  text-align: center;
+  color: #bdbec0;
+  font-size: 16px;
+}
+
+.e-mail input {
+	font-family: 'Ubuntu', sans-serif;
+	height: 30px;
+	width: 220px;
+	text-indent: 32px;
+	color: #ffffff;
+	border: 2px transparent solid;
+  	background-color: #363e40;
+  	border-radius: 5px;
+}
+
+.e-mail .fa-envelope { 
+	position: absolute;
+	top: 10px;
+	left: 23px;
+}
+
+.password {
+	position: relative;
+	text-align: center;
+	color: #bdbec0;
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.password input {
+	font-family: 'Ubuntu', sans-serif;
+	height: 30px;
+	width: 220px;
+	text-indent: 32px;
+	color: #ffffff;
+	border: 2px transparent solid;
+	background-color: #363e40;
+	border-radius: 5px;
+}
+
+.password .fa-lock { 
+	position: absolute;
+	top: 10px;
+	left: 23px;
+}
+
+.input-fields input:focus {
+	border: 2px #dd7500 solid;
+}
+
+.sign-in-btn {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.sign-in-btn button {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	height: 40px;
+	width: 140px;
+	margin: auto;
+	border-style: none;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: #a03033;
+}
+
+.sign-in-btn button:hover {
+	background-color: #d94146;
+	cursor: pointer;
+}
+
+.forgot-password-link {
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.forgot-password-link a {
+	text-decoration: none;
+	color: #bdbec0;
+	font-size: 14px;
+}
+
+.forgot-password-link a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.fb-login-btn {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 0px;
+	height: 45px;
+	width: 100%;
+	background-color: #3468af;
+}
+
+.fb-login-btn a {
+	text-align: center;
+	display: flex;
+  	flex-flow: row wrap;
+	align-self: center;
+	font-size: 14px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.fb-login-btn .ficon { 
+  	height: 15px;
+  	width: 15px;
+  	font-size: 14px;
+  	text-align: center;
+  	margin-right: 5px;
+  	border-radius: 50%;
+  	border: 2px #ffffff solid;
+}
+
+.fb-login-btn:hover {
+	background-color: #1a4e95;
+	cursor: pointer;
+}
