@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Endava Library</string>
+    <string name="add_book_name">Add Book</string>
+    <string name="plus_button_text">Add new book</string>
+    <string name="search_button_text">Search a book</string>
+    <string name="update_button_text">Update book info</string>
+    <string name="delete_button_text">Delete a book</string>
+    <string name="libraryText">Library</string>
+    <string name="startButton">Start</string>
+    <string name="registeredText">"  Endava"</string>
+    <string name="initialMessage">Welcome to the Endava Library app, tap the start button and go!</string>
+    <string name="newBookButton">Add new book</string>
+
+    <string name="new_book_message">Please type the information for the new book you want to add.</string>
+    <string name="edit_book_message">Please type the updated information for the book you want to edit.</string>
+    <string name="new_book">New Book</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_author">Author</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">No book added</string>
+    <string name="edit_text_author">Author:</string>
+    <string name="edit_text_name">Name:</string>
+    <string name="edit_text_isbn">ISBN:</string>
+    <string name="edit_text_publisher">Publisher:</string>
+    <string name="edit_text_language">Language:</string>
+    <string name="edit_book">Edit</string>
+    <string name="delete_book">Delete</string>
+    <string name="update_book_button">Update</string>
+</resources>

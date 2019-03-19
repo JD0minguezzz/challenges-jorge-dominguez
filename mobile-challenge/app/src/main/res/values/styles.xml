@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- item name="android:windowBackground">@color/endavaOrange</item -->
+        <item name="android:windowBackground">@color/appBackground</item>
+        <item name="colorPrimaryDark">@color/appBackgroundDark</item>
+    </style>
+
+    <style name="AppThemeBackButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/endavaOrange</item>
+        <item name="colorPrimaryDark">@color/endavaDarkOrange</item>
+    </style>
+
+    <style name="word_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="AppTheme.PopWindow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:dialogCornerRadius" tools:ignore="NewApi">10dp</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:dialogCornerRadius" tools:ignore="NewApi">10dp</item>
+    </style>
+
+    <style name="AppTheme.EditText" parent="AppTheme">
+        <item name="android:background">@color/itemBackground</item>
+        <item name="colorControlActivated">@color/appBackground</item>
+    </style>
+
+</resources>

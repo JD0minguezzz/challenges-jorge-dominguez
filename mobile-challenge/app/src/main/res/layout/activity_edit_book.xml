@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/backButtonToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:weightSum="12">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/roboto_condensed_light"
+                android:text="@string/edit_book_message"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textMessage"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/edit_text_name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textMessage"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/updateBookName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="textAutoComplete"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:theme="@style/AppTheme.EditText"
+                android:background="@drawable/edit_activity_custom_edit_text"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/edit_text_author"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textMessage"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/updateBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="textAutoComplete"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:theme="@style/AppTheme.EditText"
+                android:background="@drawable/edit_activity_custom_edit_text"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/edit_text_isbn"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textMessage"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/updateBookIsbn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="number"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:theme="@style/AppTheme.EditText"
+                android:background="@drawable/edit_activity_custom_edit_text"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/edit_text_language"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textMessage"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/updateBookLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="textAutoComplete"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:theme="@style/AppTheme.EditText"
+                android:background="@drawable/edit_activity_custom_edit_text"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="@string/edit_text_publisher"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="@color/textMessage"
+                android:textSize="20dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/updateBookPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:inputType="textAutoComplete"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:theme="@style/AppTheme.EditText"
+                android:background="@drawable/edit_activity_custom_edit_text"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/update_button"
+                    android:layout_width="350dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/save_button"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:text="@string/update_book_button"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/endavaWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

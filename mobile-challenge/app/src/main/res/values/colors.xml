@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="endavaOrange">#DD7500</color>
+    <color name="endavaDarkOrange">#DD5800</color>
+    <color name="lightOrange">#DD8B00</color>
+    <color name="endavaWhite">#FFFFFF</color>
+    <color name="buttonPressed">#E0E0E0</color>
+    <color name="itemBackground">#CFD8DC</color>
+    <color name="itemBackgroundPressed">#C0CCD1</color>
+    <color name="buttonBackground">#EEEEEE</color>
+    <color name="appBackground">#444F51</color>
+    <color name="appBackgroundDark">#363E40</color>
+    <color name="buttonSave">#9E9E9E</color>
+    <color name="buttonSavePressed">#BDBDBD</color>
+    <color name="textMessage">#424242</color>
+    <color name="buttonLabel">#D3D3D3</color>
+    <color name="popStartColor">#EEEEEE</color>
+    <color name="popBackground">#E4EBEE</color>
+    <color name="popText">#000000</color>
+    <color name="popWarning">#A03033</color>
+    <color name="bookNameItem">#424242</color>
+    <color name="editTextBackground">#E0E0E0</color>
+    <color name="editTextStroke">#5B6A6D</color>
+</resources>
