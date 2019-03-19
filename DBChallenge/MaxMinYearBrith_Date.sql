@@ -1,0 +1,1 @@
+SELECT * FROM challenge.challenge LIMIT 10;

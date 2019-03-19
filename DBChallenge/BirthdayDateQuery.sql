@@ -1,0 +1,1 @@
+SELECT MONTH(birthday) as 'birthday MONTH', MONTH(date_c) as 'date MONTH' FROM challenge; 
